@@ -377,7 +377,13 @@ namespace csharp_Array
             {
                 if (numeri[i] == m)
                 {
-                    Console.WriteLine("Numero trovato in posizione: {0}", numeri[i]);
+                    Console.WriteLine("Numero trovato in posizione: {0}", i + 1);
+                    break;
+                }
+                //Se il ciclo arriva alla fine senza aver trovato il numero
+                if(i == numeri.Length-1)
+                {
+                    Console.WriteLine("Numero non trovato");
                     break;
                 }
                 
